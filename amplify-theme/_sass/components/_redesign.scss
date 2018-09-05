@@ -2228,7 +2228,9 @@ li {
         .sections-list.affix {
             position: sticky;
             position: -webkit-sticky;
-            margin-top: 84px;
+            @media (min-width: 829px) {
+                margin-top: 84px;
+            }
         }
 
         .styleguide-affix {
@@ -2516,6 +2518,23 @@ li {
             width: 100%;
             padding: 36px 20px;
             max-width: 100% !important;
+        }
+
+        .collapse-btn {
+            float: right;
+            position: relative;
+            bottom: 50px;
+            font-size: 11px;
+            height: 40px;
+            padding: 0 10px;
+
+            &:hover {
+                background-color:#FFA41D
+            }
+
+            &:focus {
+                background-color: #FF9900;
+            }
         }
 
         .dropbtn {
